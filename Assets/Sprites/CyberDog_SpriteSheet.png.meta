@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -114,7 +114,784 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c14125d4afb4487b55e28a6dd5a136
+      internalID: -1358142814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02e64cad77404a53aaa8ff3ed8e9c41
+      internalID: 755068200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0191d38273fc4a01b7683bd17d72b24
+      internalID: 1970480953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8fb35e1eec94f4cbca8d7b87a30fed
+      internalID: 2137981034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27afb2f5b796742cc8fb5c2e88189e04
+      internalID: 1055193653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1e162a4f8c544609d1f703a8205c7a
+      internalID: -1423859042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fbfa35e2c84416d83eafb5243e5081
+      internalID: 1094115680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb97b91cd7904af191f55c2901ab513
+      internalID: 263191534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 248
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3947fdef94ce348fdac263d3baf75bc8
+      internalID: 951732644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869a667830357496bbe0ab8a93b71d99
+      internalID: -2095013283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511a093ad90f743ac85a3f925f910e67
+      internalID: -1682909403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdd052ffc5af488594e12daccde305e
+      internalID: 1846634249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12bea578b65d4addbd85a7e103bc764
+      internalID: -507306914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac471073f19d4d3291532b8a25be8e6
+      internalID: 1311697783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177dc58b53b694cac89c17ad63ab8ba3
+      internalID: -1280681054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3e3e9d44c5a417d960463c14279dd1
+      internalID: -267707354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a8693539ee1423a97ed4c6bd39ef7a
+      internalID: -1738902309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 186
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b439fcbd9db4875a9512aa1dfa3a3a
+      internalID: 722326195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f8330b31c7446c183491cb0fae1a81
+      internalID: -929418645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1abd6e97abd4f12803bd5f417c10e7
+      internalID: 1040045343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d795f015dd26d48e78f57b69f2598d53
+      internalID: 1835353016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85c6cc5b040a4eb2b0662474a4d9be1
+      internalID: -1849059862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8cd91a7af384a66b737bd39bcaa32e
+      internalID: -640027357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a09ba21b7ead469f979ce2f1eaa4385
+      internalID: 553003105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5c01fae2776416f869c04eca257f3e
+      internalID: -1370221429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572eaa4ad0b6343d7b5319308dec05fa
+      internalID: -1182475033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 124
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da3e6d6036754b0793b7737705e0c31
+      internalID: -838206966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119358d26f84845eaba5fa8bc7c0cc4c
+      internalID: 1468961133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0c582960dd74a8a97c2324d9da1313
+      internalID: -797979361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e849f8383114455bafed30822c140ca
+      internalID: 1110957077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91954eee0949f444aadeb6b157aa1eb7
+      internalID: -1870497846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9587cfda236c94ce2870ad0638ee18cf
+      internalID: -811719882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775868c4ba9984b4399ce28309195e94
+      internalID: 205510279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca5ef45cca164708a01968c1cc0af60
+      internalID: 960377037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde7b2dce9aab49eb84d9a8d20ba0024
+      internalID: -1867092404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 62
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3750addb6ad4262a975bb81004943a
+      internalID: 1390442293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberDog_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6e6162d3dbc46b497187f4dd28c44e
+      internalID: 1917891446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +902,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyberDog_SpriteSheet_27: 1468961133
+      CyberDog_SpriteSheet_30: -1870497846
+      CyberDog_SpriteSheet_5: -1423859042
+      CyberDog_SpriteSheet_13: 1311697783
+      CyberDog_SpriteSheet_29: 1110957077
+      CyberDog_SpriteSheet_36: 1917891446
+      CyberDog_SpriteSheet_11: 1846634249
+      CyberDog_SpriteSheet_0: -1358142814
+      CyberDog_SpriteSheet_7: 263191534
+      CyberDog_SpriteSheet_15: -267707354
+      CyberDog_SpriteSheet_18: -929418645
+      CyberDog_SpriteSheet_21: -1849059862
+      CyberDog_SpriteSheet_22: -640027357
+      CyberDog_SpriteSheet_31: -811719882
+      CyberDog_SpriteSheet_9: -2095013283
+      CyberDog_SpriteSheet_28: -797979361
+      CyberDog_SpriteSheet_16: -1738902309
+      CyberDog_SpriteSheet_24: -1370221429
+      CyberDog_SpriteSheet_12: -507306914
+      CyberDog_SpriteSheet_2: 1970480953
+      CyberDog_SpriteSheet_10: -1682909403
+      CyberDog_SpriteSheet_20: 1835353016
+      CyberDog_SpriteSheet_32: 205510279
+      CyberDog_SpriteSheet_35: 1390442293
+      CyberDog_SpriteSheet_4: 1055193653
+      CyberDog_SpriteSheet_1: 755068200
+      CyberDog_SpriteSheet_25: -1182475033
+      CyberDog_SpriteSheet_3: 2137981034
+      CyberDog_SpriteSheet_6: 1094115680
+      CyberDog_SpriteSheet_8: 951732644
+      CyberDog_SpriteSheet_19: 1040045343
+      CyberDog_SpriteSheet_34: -1867092404
+      CyberDog_SpriteSheet_26: -838206966
+      CyberDog_SpriteSheet_23: 553003105
+      CyberDog_SpriteSheet_14: -1280681054
+      CyberDog_SpriteSheet_33: 960377037
+      CyberDog_SpriteSheet_17: 722326195
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
