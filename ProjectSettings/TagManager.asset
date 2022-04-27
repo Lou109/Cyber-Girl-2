@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Ground
   - Climbing
-  - 
-  - 
+  - Player
+  - Background
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: City Background
     uniqueID: 2341538937
+    locked: 0
+  - name: No Collider
+    uniqueID: 4049464527
     locked: 0
   - name: Water
     uniqueID: 3885572879
