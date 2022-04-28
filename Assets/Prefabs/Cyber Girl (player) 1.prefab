@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4939057132776045207}
   - component: {fileID: 4939057132776045206}
   - component: {fileID: 4939057132776045225}
+  - component: {fileID: 1714366400}
   m_Layer: 8
   m_Name: Cyber Girl (player) 1
   m_TagString: Untagged
@@ -118,12 +119,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 4939057132776045200}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 878d2a6e021d141b28beb4c31ee7d657, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005662322, y: -0.03680551}
-  m_Size: {x: 0.49264932, y: 1.0509613}
+  m_Offset: {x: 0.046889305, y: -0.039741516}
+  m_Size: {x: 0.37755632, y: 1.0568333}
   m_Direction: 0
 --- !u!50 &4939057132776045207
 Rigidbody2D:
@@ -138,9 +139,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 8
+  m_LinearDrag: 0.03
+  m_AngularDrag: 0.01
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -189,5 +190,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
-  jumpSpeed: 25
-  climbSpeed: 5
+  jumpSpeed: 20
+  climbSpeed: 4
+--- !u!61 &1714366400
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939057132776045200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05985582, y: -0.5353792}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.15625, y: 1.15625}
+    newSize: {x: 1.15625, y: 1.15625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.52443576, y: 0.08549166}
+  m_EdgeRadius: 0
