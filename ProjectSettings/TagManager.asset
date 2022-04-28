@@ -44,6 +44,9 @@ TagManager:
   - name: Background 1
     uniqueID: 1782716363
     locked: 0
+  - name: Skyline Tilemap
+    uniqueID: 2217433267
+    locked: 0
   - name: City Background
     uniqueID: 2341538937
     locked: 0
