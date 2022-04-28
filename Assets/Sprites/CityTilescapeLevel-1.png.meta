@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 31.8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3151,11 +3151,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       CityTilescapeLevel-1_60: -547134911
-      CityTilescapeLevel-1_140: -1096880461
-      CityTilescapeLevel-1_122: 886344729
+      CityTilescapeLevel-1_95: 1382228914
       CityTilescapeLevel-1_132: -170886400
       CityTilescapeLevel-1_3: 1716466798
       CityTilescapeLevel-1_38: 372200636
+      CityTilescapeLevel-1_117: 1057523888
       CityTilescapeLevel-1_142: -2141732451
       CityTilescapeLevel-1_29: -1506079688
       CityTilescapeLevel-1_54: 1263142110
@@ -3217,10 +3217,10 @@ TextureImporter:
       CityTilescapeLevel-1_91: 1556337683
       CityTilescapeLevel-1_75: -1136633908
       CityTilescapeLevel-1_101: 2032322526
+      CityTilescapeLevel-1_61: 412032079
       CityTilescapeLevel-1_56: -923605694
       CityTilescapeLevel-1_7: -1014067451
       CityTilescapeLevel-1_41: 254924592
-      CityTilescapeLevel-1_61: 412032079
       CityTilescapeLevel-1_47: -1576069479
       CityTilescapeLevel-1_88: -1611302834
       CityTilescapeLevel-1_123: 1220974882
@@ -3291,9 +3291,9 @@ TextureImporter:
       CityTilescapeLevel-1_34: 465523367
       CityTilescapeLevel-1_53: -655215489
       CityTilescapeLevel-1_72: 334736659
+      CityTilescapeLevel-1_122: 886344729
       CityTilescapeLevel-1_45: -911922575
-      CityTilescapeLevel-1_95: 1382228914
-      CityTilescapeLevel-1_117: 1057523888
+      CityTilescapeLevel-1_140: -1096880461
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
