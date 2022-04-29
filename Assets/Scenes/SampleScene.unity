@@ -584,18 +584,18 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 0.1
-  m_YDamping: 0.1
-  m_ZDamping: 0.2
+  m_YDamping: 0.2
+  m_ZDamping: 0.1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.1
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 1
-  m_SoftZoneHeight: 1
+  m_SoftZoneWidth: 0
+  m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -850,18 +850,18 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 0.1
-  m_YDamping: 0.1
+  m_YDamping: 0.2
   m_ZDamping: 0.1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.1
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 1
-  m_SoftZoneHeight: 1
+  m_SoftZoneWidth: 0
+  m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -7710,18 +7710,18 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 0.1
-  m_YDamping: 0.1
+  m_YDamping: 0.2
   m_ZDamping: 0.1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.1
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 1
-  m_SoftZoneHeight: 1
+  m_SoftZoneWidth: 0
+  m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -23644,8 +23644,8 @@ Tilemap:
   - first: {x: 25, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 30
-      m_TileSpriteIndex: 30
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -23713,11 +23713,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b424aeacc00fe400ea12af7457f417be, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 40fe10b62b3cd4698a8f972cf51c3d18, type: 2}
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 985a6f637661346fb8ffa45f5c96afe8, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 1b5b0592dcf314587bc10f0f25c77274, type: 2}
-  - m_RefCount: 27
+  - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: bb14d844e00be44e1b27390596798af8, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 49e96ffd766034fab8422f83e9bd7fd7, type: 2}
@@ -23938,11 +23938,11 @@ Tilemap:
     m_Data: {fileID: 202183533, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1132833042, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
-  - m_RefCount: 17
+  - m_RefCount: 16
     m_Data: {fileID: -607767445, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 701726049, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
-  - m_RefCount: 27
+  - m_RefCount: 28
     m_Data: {fileID: -700651162, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -923605694, guid: 864b7e62a128d449d964f0f67a47c1d6, type: 3}
@@ -38366,7 +38366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045207, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_Mass
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045207, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_GravityScale
