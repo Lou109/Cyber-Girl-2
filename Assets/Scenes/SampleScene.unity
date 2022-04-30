@@ -583,18 +583,18 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.1
-  m_YDamping: 0.2
-  m_ZDamping: 0.1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
+  m_DeadZoneWidth: 0.1
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0
+  m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
@@ -849,18 +849,18 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.1
-  m_YDamping: 0.2
-  m_ZDamping: 0.1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
+  m_DeadZoneWidth: 0.1
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0
+  m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
@@ -3966,7 +3966,9 @@ GameObject:
   - component: {fileID: 779264782}
   - component: {fileID: 779264781}
   - component: {fileID: 779264780}
-  m_Layer: 0
+  - component: {fileID: 779264783}
+  - component: {fileID: 779264784}
+  m_Layer: 11
   m_Name: Droid (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4073,8 +4075,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.039658546, y: -0.46660423}
-  m_Size: {x: 0.8764477, y: 1.0371675}
+  m_Offset: {x: -0.0047597885, y: -0.46660423}
+  m_Size: {x: 0.9462452, y: 1.0371675}
   m_Direction: 0
 --- !u!50 &779264782
 Rigidbody2D:
@@ -4097,6 +4099,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &779264783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779264777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f311ca69db8da4457b54587def350553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+--- !u!61 &779264784
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779264777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.55951977, y: -1.1735709}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1949686, y: 2.0125787}
+    newSize: {x: 1.1949686, y: 2.0125787}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.08675575, y: 0.3315487}
+  m_EdgeRadius: 0
 --- !u!1 &849859460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,18 +7750,18 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.1
-  m_YDamping: 0.2
-  m_ZDamping: 0.1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
+  m_DeadZoneWidth: 0.1
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0
+  m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
@@ -17056,7 +17097,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784091, y: 1}
+    m_SensorSize: {x: 1.7808989, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -38133,7 +38174,7 @@ Transform:
   - {fileID: 766814418}
   - {fileID: 979500019}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862861642
 GameObject:
@@ -38213,7 +38254,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777998, y: 1}
+    m_SensorSize: {x: 1.7808989, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -38300,7 +38341,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784091, y: 1}
+    m_SensorSize: {x: 1.7808989, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -38322,7 +38363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045205, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045205, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38363,18 +38404,6 @@ PrefabInstance:
     - target: {fileID: 4939057132776045205, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939057132776045207, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_Mass
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939057132776045207, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_GravityScale
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939057132776045225, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: jumpSpeed
-      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
