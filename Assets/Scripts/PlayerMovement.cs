@@ -10,13 +10,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+    [SerializeField] BoxCollider2D deathCollider;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
     float gravityScaleAtStart;
 
     bool isAlive = true;
-   
+
+    void Awake()
+    {
+        deathCollider.GetComponentInChildren<BoxCollider2D>();
+    }
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -94,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            deathCollider.enabled = true;
         }
     }
 
