@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
        
         if (value.isPressed)
         {
-            myRigidbody.velocity += new Vector2(Mathf.Epsilon, jumpSpeed);
+            myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
     }
 
