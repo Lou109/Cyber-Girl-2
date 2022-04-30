@@ -96,11 +96,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             deathCollider.enabled = true;
+            myBodyCollider.enabled = false;
+            myFeetCollider.enabled = false;
         }
     }
 
