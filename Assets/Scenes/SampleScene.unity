@@ -38254,7 +38254,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777998, y: 1}
+    m_SensorSize: {x: 1.7808989, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -38357,6 +38357,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1714366400, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045200, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_Name
       value: Cyber Girl (player)
