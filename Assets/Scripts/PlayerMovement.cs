@@ -5,22 +5,40 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Vector2 moveInput;
-    Rigidbody2D myRigidbody;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] BoxCollider2D deathCollider;
+
+    Vector2 death = Vector2.zero;
+    Vector2 moveInput;
+    Rigidbody2D myRigidbody;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
     float gravityScaleAtStart;
+    CyberGirl2 controls;
+    Shooter shooter;
+    Health health;
 
     bool isAlive = true;
+    bool moving;
 
     void Awake()
     {
+        shooter = GetComponent<Shooter>();
+        controls = new CyberGirl2();
         deathCollider.GetComponentInChildren<BoxCollider2D>();
+    }
+
+    private void OnEnable()
+    {
+        controls.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Player.Disable();
     }
 
     void Start()
@@ -29,31 +47,69 @@ public class PlayerMovement : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        health = GetComponent<Health>();
         gravityScaleAtStart = myRigidbody.gravityScale;
     }
-   
+
     void Update()
     {
+
         if (!isAlive) { return; }
+
         Run();
         FlipSprite();
         ClimbLadder();
         Die();
+        OnFire();
+    }
+
+    void OnFire()
+    {
+        if (!isAlive) { return; }
+
+        if (shooter != null)
+        {
+            bool isShooting = Mathf.RoundToInt(controls.Player.Fire.ReadValue<float>()) > 0;
+            myAnimator.SetLayerWeight(1, isShooting ? 1 : 0);
+            shooter.isFiring = isShooting;
+        }
+
     }
 
     void OnMove(InputValue value)
     {
         if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
+
+
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.gameObject.CompareTag("MovingPlatform") || other.gameObject.CompareTag("Ground"))
+        {
+            moving = true;
+            this.transform.parent = other.transform;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            moving = false;
+            this.transform.parent = null;
+        }
     }
 
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return;}
-       
+        if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+
         if (value.isPressed)
         {
+            //do stuff
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
     }
@@ -96,14 +152,28 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+        int healthAmount = health.GetHealth();
+
+        if (healthAmount <= 0 || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy Bullets")))
+        {
+            DieResult();
+        }
+
+        if (CompareTag("PlayerDetection") || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards", "Enemies", "Prevent Flip")))
+        {
+            DieResult();
+        }
+
+        void DieResult()
+
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            shooter.isFiring = false;
+            myRigidbody.velocity = death;
             deathCollider.enabled = true;
             myBodyCollider.enabled = false;
             myFeetCollider.enabled = false;
         }
     }
-
 }

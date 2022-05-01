@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -70,4 +71,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2151278381
+    locked: 0
+  - name: Visual Effects
+    uniqueID: 431812813
     locked: 0
