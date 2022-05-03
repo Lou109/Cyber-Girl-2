@@ -25,7 +25,7 @@ TagManager:
   - PlayerDeath
   - BulletPlayer
   - BulletEnemy
-  - Detect Player
+  - PlayerDetection
   - Prevent Flip
   - 
   - 

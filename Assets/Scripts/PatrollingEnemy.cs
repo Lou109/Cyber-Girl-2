@@ -53,7 +53,9 @@ public class PatrollingEnemy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             moveSpeed = -runSpeed;
-            animator.SetTrigger("isdogRunning");
+            bool enemyHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+            animator.SetBool("isdogRunning", enemyHasHorizontalSpeed);
+            
             myboxCollider.enabled = false;
         }
     }
