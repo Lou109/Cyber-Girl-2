@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - MovingPlatform
+  - PlayerDetection
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - PlayerDeath
   - BulletPlayer
   - BulletEnemy
-  - 
-  - 
+  - Detect Player
+  - Prevent Flip
   - 
   - 
   - 

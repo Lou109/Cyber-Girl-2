@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
             DieResult();
         }
 
-        if (CompareTag("PlayerDetection") || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards", "Enemies", "Prevent Flip")))
+        if (CompareTag ("PlayerDetection")|| myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards", "Enemies", "Prevent Flip")))
         {
             DieResult();
         }
@@ -172,7 +172,6 @@ public class PlayerMovement : MonoBehaviour
             shooter.isFiring = false;
             myRigidbody.velocity = death;
             deathCollider.enabled = true;
-            myBodyCollider.enabled = false;
             myFeetCollider.enabled = false;
         }
     }
