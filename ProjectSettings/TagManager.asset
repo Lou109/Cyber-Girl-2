@@ -28,7 +28,7 @@ TagManager:
   - PlayerDetection
   - Prevent Flip
   - Interactables
-  - 
+  - Door
   - 
   - 
   - 
@@ -59,6 +59,9 @@ TagManager:
     locked: 0
   - name: Water
     uniqueID: 3885572879
+    locked: 0
+  - name: Door
+    uniqueID: 1393527333
     locked: 0
   - name: Platforms
     uniqueID: 3135148825
