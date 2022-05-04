@@ -27,7 +27,7 @@ TagManager:
   - BulletEnemy
   - PlayerDetection
   - Prevent Flip
-  - 
+  - Interactables
   - 
   - 
   - 
@@ -68,6 +68,9 @@ TagManager:
     locked: 0
   - name: Hazards
     uniqueID: 3082358095
+    locked: 0
+  - name: Interactables
+    uniqueID: 3827378431
     locked: 0
   - name: Enemies
     uniqueID: 2942314957
