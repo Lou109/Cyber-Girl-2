@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
 
-        if (other.gameObject.CompareTag("MovingPlatform") || other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("MovingPlatform"))
         {
             moving = true;
             this.transform.parent = other.transform;

@@ -8,6 +8,7 @@ TagManager:
   - MovingPlatform
   - PlayerDetection
   - Enemy
+  - Electric Trap
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Prevent Flip
   - Interactables
   - Door
-  - 
+  - nothing
   - 
   - 
   - 
