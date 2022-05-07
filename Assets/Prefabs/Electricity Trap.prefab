@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1943130401442352926}
   - component: {fileID: 1943130401442352924}
   - component: {fileID: 1943130401442352927}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 1943130401845081517}
   - component: {fileID: 1943130401845081515}
   - component: {fileID: 1943130401845081514}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9670,7 +9670,7 @@ GameObject:
   - component: {fileID: 1943130401924972524}
   - component: {fileID: 1943130401924972522}
   - component: {fileID: 1943130401924972525}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14483,7 +14483,7 @@ GameObject:
   - component: {fileID: 1943130402153677147}
   - component: {fileID: 1943130402153677145}
   - component: {fileID: 1943130402153677144}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19295,7 +19295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943130402628183912}
   - component: {fileID: 1943130402628183913}
-  m_Layer: 13
+  m_Layer: 21
   m_Name: Light Bolts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19359,7 +19359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943130402809335791}
   - component: {fileID: 1943130402809335788}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: On and Off
   m_TagString: Electric Trap
   m_Icon: {fileID: 0}
@@ -19472,8 +19472,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1159818471
-  m_SortingLayer: 7
+  m_SortingLayerID: -467588865
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 71409a2c738034da2aec4f46ca6a6963, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19497,7 +19497,7 @@ GameObject:
   - component: {fileID: 1943130403101740325}
   - component: {fileID: 1943130403101740323}
   - component: {fileID: 1943130403101740322}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24310,7 +24310,7 @@ GameObject:
   - component: {fileID: 1943130403127768843}
   - component: {fileID: 1943130403127768841}
   - component: {fileID: 1943130403127768840}
-  m_Layer: 8
+  m_Layer: 21
   m_Name: Light Bolt (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -158,7 +158,11 @@ public class PlayerMovement : MonoBehaviour
         {
             DieResult();
         }
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Shock")))
 
+        {
+            DieByShock();
+        }
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards", "Enemies")))
         {
             DieResult();
@@ -168,8 +172,8 @@ public class PlayerMovement : MonoBehaviour
         {
             OtherDieResult();
         }
-        void DieResult()
 
+        void DieResult()
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
@@ -189,6 +193,16 @@ public class PlayerMovement : MonoBehaviour
             deathCollider.enabled = true;
             myFeetCollider.enabled = false;
             
+        }
+
+        void DieByShock()
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Shock");
+            shooter.isFiring = false;
+            myRigidbody.velocity = death;
+            deathCollider.enabled = true;
+            myFeetCollider.enabled = false;
         }
     }
 }
