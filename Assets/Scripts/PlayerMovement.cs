@@ -182,6 +182,7 @@ public class PlayerMovement : MonoBehaviour
             deathCollider.enabled = true;
             myFeetCollider.enabled = false;
             myBodyCollider.enabled = false;
+            Invoke("DeathDelay", 2.0f);
         }
 
         void OtherDieResult()
@@ -192,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = death;
             deathCollider.enabled = true;
             myFeetCollider.enabled = false;
-            
+            Invoke("DeathDelay", 2.0f);
         }
 
         void DieByShock()
@@ -203,6 +204,13 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = death;
             deathCollider.enabled = true;
             myFeetCollider.enabled = false;
+            Invoke("DeathDelay", 2.0f);
+
         }
     }
-}
+        void DeathDelay()
+
+        {
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
+        }
+    }
