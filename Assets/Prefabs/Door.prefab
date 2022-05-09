@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf96440110f264122bb025023f7a0dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 2
 --- !u!1 &7234494902479365875
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +122,7 @@ GameObject:
   - component: {fileID: 7234494902479365874}
   - component: {fileID: 7234494902479365877}
   - component: {fileID: 7234494902479365876}
-  m_Layer: 19
+  m_Layer: 18
   m_Name: IndDoorSprite_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,8 +182,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1393527333
-  m_SortingLayer: 6
+  m_SortingLayerID: -467588865
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 1953023765, guid: 436b005739cd44ec59d2f49accfec867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -371,8 +372,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1393527333
-  m_SortingLayer: 6
+  m_SortingLayerID: -467588865
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -887730252, guid: 436b005739cd44ec59d2f49accfec867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
