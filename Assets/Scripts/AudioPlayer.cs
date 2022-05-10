@@ -12,6 +12,5 @@ public class AudioPlayer : MonoBehaviour
         {
             playerShootingAudio.Play();
         }
-    }
-   
+    } 
 }
