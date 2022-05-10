@@ -1078,6 +1078,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4939057132776045205, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
   m_PrefabInstance: {fileID: 4939057133159660553}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &523142821 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 523142821, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
+  m_PrefabInstance: {fileID: 4939057133159660553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &624561175
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,10 +8085,6 @@ PrefabInstance:
     - target: {fileID: 3246983206729627222, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
       propertyPath: m_Name
       value: Droid (Enemy)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3246983206729627222, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
@@ -26315,6 +26316,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 314895111}
     m_Modifications:
+    - target: {fileID: 2944947110757200457, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944947110757200457, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944947110757200457, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3246983206729627220, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -62789,9 +62802,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid (Enemy)
       objectReference: {fileID: 0}
-    - target: {fileID: 3246983206729627222, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 7578957355531610033, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: m_Size.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578957355531610033, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578957355531610033, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
@@ -63017,10 +63038,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid (Enemy)
       objectReference: {fileID: 0}
-    - target: {fileID: 3246983206729627222, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
 --- !u!1001 &4781639364460906486
@@ -63151,25 +63168,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1020848853, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045200, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_Name
       value: Cyber Girl (player)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939057132776045203, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 347792390, guid: 98b54615554324de391a563c4ef3fefd, type: 3}
-    - target: {fileID: 4939057132776045204, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_Size.x
-      value: 0.52162457
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939057132776045204, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.051466465
       objectReference: {fileID: 0}
     - target: {fileID: 4939057132776045205, guid: 694a31f1308d049288d607e9aaac2c2f, type: 3}
       propertyPath: m_RootOrder
@@ -63457,3 +63458,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a893a232a9304453aa0f4d672590332, type: 3}
+--- !u!1001 &9050778687490939690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9050778685962826996, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: shootingVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826996, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: enemyShootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a9dd7e5cb8144eddb31def1d349f00b, type: 3}
+    - target: {fileID: 9050778685962826996, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: playerShootingAudio
+      value: 
+      objectReference: {fileID: 523142821}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826997, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050778685962826998, guid: bfededc7399724fba987f44899c72221, type: 3}
+      propertyPath: m_Name
+      value: Audio Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfededc7399724fba987f44899c72221, type: 3}

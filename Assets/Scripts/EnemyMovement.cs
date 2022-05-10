@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     CapsuleCollider2D capsuleCollider;
     Health health;
-
+     
     void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -54,3 +54,4 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 }
+    
