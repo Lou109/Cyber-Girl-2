@@ -11,30 +11,16 @@ public class Shooter : MonoBehaviour
     [SerializeField] Transform gun;
     [SerializeField] float firingRateVariance = 0f;
     [SerializeField] float minimumFiringRate = 0.1f;
-    [SerializeField] bool useAI;
-   
+    [SerializeField] AudioSource playerShootingAudio;
+    
     Health health;
     public bool isFiring;
-
     Coroutine firingCoroutine;
-    AudioPlayer audioPlayer;
-  
-
-    void Awake()
-    {
-        audioPlayer = FindObjectOfType<AudioPlayer>();
-    }
-
     float xSpeed;
 
     void Start()
     {
         health = GetComponent<Health>();
-
-        if (useAI)
-        {
-            isFiring = true;
-        }
     }
 
     void Update()
@@ -79,17 +65,15 @@ public class Shooter : MonoBehaviour
             xSpeed = transform.localScale.x * bulletSpeed;
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
 
-            if (rb != null && !useAI)
+            if (rb != null)
 
             {
-                audioPlayer.PlayShootingClip();
+                playerShootingAudio.Play();
             }
-    
-            float timeToNextProjectile = Random.Range(firingRate - firingRateVariance, firingRate + firingRateVariance);
-            timeToNextProjectile = Mathf.Clamp(timeToNextProjectile, minimumFiringRate, float.MaxValue);
+
             rb.velocity = new Vector2(xSpeed, 0);
             Destroy(instance, projectileLifetime);
-            yield return new WaitForSeconds(timeToNextProjectile);
+            yield return new WaitForSeconds(firingRate);
         }
       
     }
