@@ -9,9 +9,8 @@ public class Shooter : MonoBehaviour
     [SerializeField] float projectileLifetime = 5f;
     [SerializeField] float firingRate = 0.2f;
     [SerializeField] Transform gun;
-    [SerializeField] float firingRateVariance = 0f;
-    [SerializeField] float minimumFiringRate = 0.1f;
     [SerializeField] AudioSource playerShootingAudio;
+  
     
     Health health;
     public bool isFiring;
@@ -21,6 +20,7 @@ public class Shooter : MonoBehaviour
     void Start()
     {
         health = GetComponent<Health>();
+      
     }
 
     void Update()
@@ -68,13 +68,15 @@ public class Shooter : MonoBehaviour
             if (rb != null)
 
             {
+                rb.velocity = new Vector2(xSpeed, 0);
                 playerShootingAudio.Play();
             }
-
-            rb.velocity = new Vector2(xSpeed, 0);
             Destroy(instance, projectileLifetime);
+            
+
+          
+            
             yield return new WaitForSeconds(firingRate);
-        }
-      
+        }     
     }
 }

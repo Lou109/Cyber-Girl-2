@@ -9,6 +9,7 @@ TagManager:
   - PlayerDetection
   - Enemy
   - Electric Trap
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Door
   - nothing
   - Shock
-  - DetectPlayerShootSFX
+  - DetectPlayer
   - 
   - 
   - 
