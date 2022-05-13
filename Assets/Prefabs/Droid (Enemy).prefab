@@ -384,3 +384,4 @@ MonoBehaviour:
   gun: {fileID: 3246983205408274881}
   enemyShootingAudio: {fileID: 1590963426}
   shootingRange: 4
+  stopshootingRange: 0

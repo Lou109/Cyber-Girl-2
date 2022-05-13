@@ -10,7 +10,8 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] float firingRate = 0.2f;
     [SerializeField] Transform gun;
     [SerializeField] AudioSource enemyShootingAudio;
-    [SerializeField] float shootingRange;
+    [SerializeField] float shootingRange = 4f;
+   
     bool isAlive = true;
     Transform player;
     Health health;
@@ -37,29 +38,26 @@ public class EnemyShooter : MonoBehaviour
 
         if (healthAmount <= 0)
         {
-
-            enemyisFiring = false;
-          
+            enemyisFiring = false;   
         }
     }
 
     void EnemyFire()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer <= shootingRange)
-        {  
-            if (enemyisFiring && firingCoroutine == null)
-            {
-                {
-                    firingCoroutine = StartCoroutine(FireContinuously());
-                }
-            }
-        }
-        else if (!enemyisFiring && firingCoroutine != null)
+    
+            if (distanceFromPlayer <= shootingRange && firingCoroutine == null)
         {
+            firingCoroutine = StartCoroutine(FireContinuously());
+        }
+         
+            if (distanceFromPlayer >= shootingRange && firingCoroutine != null)
+        {
+
             StopCoroutine(firingCoroutine);
             firingCoroutine = null;
         }
+                      
     }
 
     IEnumerator FireContinuously()
@@ -86,9 +84,11 @@ public class EnemyShooter : MonoBehaviour
     }
         void OnDrawGizmosSelected()
         {
+       
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, shootingRange);
+      
     }
 
-    }
+}
 
