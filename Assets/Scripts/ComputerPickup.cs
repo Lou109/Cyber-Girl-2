@@ -5,7 +5,7 @@ using UnityEngine;
 public class ComputerPickup : MonoBehaviour
 {
 
-    [SerializeField] int pointsForComputerPickup = 1;
+    [SerializeField]int pointsForComputerPickup = 1;
     bool wasCollected = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -14,7 +14,6 @@ public class ComputerPickup : MonoBehaviour
         {
             wasCollected = true;
             FindObjectOfType<GameSession>().AddToScore(pointsForComputerPickup);
-
         }
     }
 }

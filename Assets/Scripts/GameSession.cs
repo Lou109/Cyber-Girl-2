@@ -10,6 +10,8 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
+    [SerializeField] int hacksToOpenDoor = 3;
+    [SerializeField] int pointsPerHack = 1;
 
 
     void Awake()
@@ -43,10 +45,10 @@ public class GameSession : MonoBehaviour
         }
     }
 
-    public void AddToScore(int pointsToAdd)
+    public void AddToScore(int pointsForComputerPickup)
     {
-        score += pointsToAdd;
-        scoreText.text = score.ToString();
+        score += pointsPerHack;
+        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
     }
 
     void TakeLife()

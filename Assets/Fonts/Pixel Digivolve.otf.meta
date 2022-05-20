@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee2a8e4147cbc48e8b8823a3926de380
+guid: b393db0f1714047959feb72cd8289bf1
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Minecraft
+  - Pixel Digivolve
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
