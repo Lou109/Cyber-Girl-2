@@ -63011,10 +63011,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid (Enemy)
       objectReference: {fileID: 0}
-    - target: {fileID: 4723176399473646685, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
-      propertyPath: stopshootingRange
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63f26f7db682146d9bf8e65c4721edd3, type: 3}
 --- !u!1001 &4781639364460906486

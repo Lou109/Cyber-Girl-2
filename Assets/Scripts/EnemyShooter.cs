@@ -12,13 +12,11 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] AudioSource enemyShootingAudio;
     [SerializeField] float shootingRange = 4f;
    
-    bool isAlive = true;
     Transform player;
     Health health;
     bool enemyisFiring = true;
     Coroutine firingCoroutine;
     float xSpeed;
-
 
     void Start()
     {
@@ -28,19 +26,11 @@ public class EnemyShooter : MonoBehaviour
 
     void Update()
     {
+       
         EnemyFire();
-        StopEnemyFireIfDead();
     }
-
-    public void StopEnemyFireIfDead()
-    {
-        int healthAmount = health.GetHealth();
-
-        if (healthAmount <= 0)
-        {
-            enemyisFiring = false;   
-        }
-    }
+     
+   
 
     void EnemyFire()
     {
@@ -56,39 +46,39 @@ public class EnemyShooter : MonoBehaviour
 
             StopCoroutine(firingCoroutine);
             firingCoroutine = null;
-        }
-                      
+            enemyisFiring = false;
+        }               
     }
 
     IEnumerator FireContinuously()
     {
         while (true)
         {
-            GameObject instance = Instantiate(projectilePrefab,
-                                                  gun.position,
-                                            transform.rotation);
+            int healthAmount = health.GetHealth();
 
-            xSpeed = transform.localScale.x * bulletSpeed;
-            Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
-
-            if (rb != null)
-
+            if (healthAmount >= 0)
             {
+  
+                GameObject instance = Instantiate(projectilePrefab,
+                                                 gun.position,
+                                           transform.rotation);
+
+                Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
+                xSpeed = transform.localScale.x * bulletSpeed;
                 enemyShootingAudio.Play();
+                rb.velocity = new Vector2(xSpeed, 0);
+                Destroy(instance, projectileLifetime);
             }
-            rb.velocity = new Vector2(xSpeed, 0);
-            Destroy(instance, projectileLifetime);
 
             yield return new WaitForSeconds(firingRate);
+
         }
     }
         void OnDrawGizmosSelected()
         {
        
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, shootingRange);
-      
+        Gizmos.DrawWireSphere(transform.position, shootingRange);    
     }
-
 }
 
