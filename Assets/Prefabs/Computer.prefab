@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 8398288772333641600}
   - component: {fileID: 8398288772333641607}
   - component: {fileID: 8398288772333641605}
-  - component: {fileID: 8398288772333641606}
   - component: {fileID: 1325597872750428379}
-  - component: {fileID: 1949672991}
   - component: {fileID: 4382576661042442874}
   m_Layer: 18
   m_Name: Computer
@@ -136,20 +134,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8398288772333641606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8398288772333641602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c424b8bf07348a59393df48f7fe83d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 8398288772333641605}
-  actionParameter: isFlashing
 --- !u!82 &1325597872750428379
 AudioSource:
   m_ObjectHideFlags: 0
@@ -246,19 +230,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1949672991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8398288772333641602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03424b35d352642189ce69f0e732ba84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playSound: {fileID: 1325597872750428379}
 --- !u!114 &4382576661042442874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,4 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad2e8587e5aa419eaef27de6264f00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionParameter: isFlashing
   pointsForComputerPickup: 1
+  animator: {fileID: 8398288772333641605}
+  playSound: {fileID: 1325597872750428379}
+  myboxCollider: {fileID: 8398288772333641607}
