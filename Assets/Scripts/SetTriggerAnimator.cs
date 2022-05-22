@@ -6,12 +6,20 @@ public class SetTriggerAnimator : MonoBehaviour
 {
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
+    [SerializeField] int numberofhacksneeded = 3;
+    GameSession session;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void Start()
     {
+        session = GetComponent<GameSession>();
+    }
 
-        if (other.CompareTag("Player"))
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        int getTheScore = session.GetScore();
 
+        if (other.CompareTag("Player") && getTheScore == numberofhacksneeded)
+             
         {
             animator.SetTrigger(actionParameter);
         }

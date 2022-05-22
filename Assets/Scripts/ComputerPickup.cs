@@ -10,8 +10,7 @@ public class ComputerPickup : MonoBehaviour
     [SerializeField]Animator animator;
     [SerializeField] AudioSource playSound;
     [SerializeField] BoxCollider2D myboxCollider = null;
-
-
+   
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && !wasCollected)
@@ -22,5 +21,6 @@ public class ComputerPickup : MonoBehaviour
             playSound.Play();
             myboxCollider.enabled = false;
         }
+        
     }
 }

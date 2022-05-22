@@ -6,13 +6,31 @@ using UnityEngine.SceneManagement;
 public class LevelExit : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
+    [SerializeField] int numberofhacksneeded = 3;
+    GameSession gameSession;
+    [SerializeField] Animator animator = null;
+    [SerializeField] string actionParameter = null;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Awake()
     {
-        if (other.tag == "Player")
+        gameSession = FindObjectOfType <GameSession>();
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        int getTheScore = gameSession.GetScore();
+
+        if (other.tag == "Player" && getTheScore == numberofhacksneeded)
         {
+            animator.SetTrigger(actionParameter);
             StartCoroutine(LoadNextLevel());
         }
+        if (other.tag == "Player" && getTheScore <= numberofhacksneeded)
+        {
+            return;
+        }
+
+
     }
 
     IEnumerator LoadNextLevel()

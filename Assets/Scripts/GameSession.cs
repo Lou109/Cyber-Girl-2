@@ -30,7 +30,7 @@ public class GameSession : MonoBehaviour
     void Start()
     {
         livesText.text = playerLives.ToString();
-        scoreText.text = score.ToString();
+        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
     }
 
     public void ProcessPlayerDeath()
@@ -48,7 +48,12 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int pointsForComputerPickup)
     {
         score += pointsPerHack;
-        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
+        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;   
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 
     void TakeLife()
