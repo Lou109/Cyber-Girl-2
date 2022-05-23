@@ -10,11 +10,11 @@ public class LevelExit : MonoBehaviour
     GameSession gameSession;
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
-    bool enteredDoorWay = false;
+    bool doorOpened;
 
     private void Awake()
     {
-        gameSession = FindObjectOfType <GameSession>();
+        gameSession = FindObjectOfType<GameSession>();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +26,7 @@ public class LevelExit : MonoBehaviour
             animator.SetTrigger(actionParameter);
             StartCoroutine(LoadNextLevel());
         }
+
         if (other.tag == "Player" && getTheScore <= numberofhacksneeded)
         {
             return;
@@ -42,8 +43,15 @@ public class LevelExit : MonoBehaviour
         {
             nextSceneIndex = 0;
         }
-        enteredDoorWay = true;
+
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
-    }  
+        DoorHasBeenOpened();
+    }
+
+    public bool DoorHasBeenOpened()
+    {
+        return doorOpened = true;
+    }
+
 }

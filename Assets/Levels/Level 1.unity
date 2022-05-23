@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &25889375 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7234494902255340338, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
+  m_PrefabInstance: {fileID: 7234494901966944761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71325457
 GameObject:
   m_ObjectHideFlags: 0
@@ -12924,11 +12929,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8911daaeda74ef4ba2fdb8f0fa1b54, type: 3}
---- !u!4 &950578966 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6607718967075268454, guid: db8911daaeda74ef4ba2fdb8f0fa1b54, type: 3}
-  m_PrefabInstance: {fileID: 950578965}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &966270485
 GameObject:
   m_ObjectHideFlags: 0
@@ -26610,6 +26610,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29182b153e75c4c2ba18a0e87cda26fa, type: 3}
+--- !u!4 &1324881040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6607718967075268454, guid: db8911daaeda74ef4ba2fdb8f0fa1b54, type: 3}
+  m_PrefabInstance: {fileID: 950578965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1503222369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63065,7 +63070,7 @@ Transform:
   - {fileID: 767092378212381659}
   - {fileID: 767092378843560624}
   - {fileID: 767092378110018394}
-  m_Father: {fileID: 950578966}
+  m_Father: {fileID: 1324881040}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3246983206292264287
@@ -63437,6 +63442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
+--- !u!61 &7234494901966944762 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7234494902255340339, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
+  m_PrefabInstance: {fileID: 7234494901966944761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7644900393882015338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63561,5 +63571,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 9125637023412345063, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: collider2D
+      value: 
+      objectReference: {fileID: 7234494901966944762}
+    - target: {fileID: 9125637023412345063, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 25889375}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}

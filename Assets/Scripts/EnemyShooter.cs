@@ -29,9 +29,7 @@ public class EnemyShooter : MonoBehaviour
        
         EnemyFire();
     }
-     
-   
-
+    
     void EnemyFire()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);

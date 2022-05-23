@@ -9,7 +9,7 @@ public class ComputerPickup : MonoBehaviour
     bool wasCollected = false;
     [SerializeField]Animator animator;
     [SerializeField] AudioSource playSound;
-    [SerializeField] BoxCollider2D myboxCollider = null;
+    [SerializeField] BoxCollider2D myboxCollider;
    
     void OnTriggerEnter2D(Collider2D other)
     {

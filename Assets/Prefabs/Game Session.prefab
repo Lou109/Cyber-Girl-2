@@ -425,3 +425,4 @@ MonoBehaviour:
   score: 0
   hacksToOpenDoor: 3
   pointsPerHack: 1
+  doorAnimator: {fileID: 0}
