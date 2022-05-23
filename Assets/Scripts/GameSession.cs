@@ -12,6 +12,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] int score = 0;
     [SerializeField] int hacksToOpenDoor = 3;
     [SerializeField] int pointsPerHack = 1;
+    Animator animator;
 
 
     void Awake()
@@ -47,8 +48,13 @@ public class GameSession : MonoBehaviour
 
     public void AddToScore(int pointsForComputerPickup)
     {
+
         score += pointsPerHack;
-        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;   
+        scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
+        if (score == hacksToOpenDoor)
+        {
+            ResetPickupScore();
+        }
     }
 
     public int GetScore()
@@ -66,7 +72,15 @@ public class GameSession : MonoBehaviour
 
     void ResetGameSession()
     {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
+        Destroy(gameObject);
+    }
+
+    void ResetPickupScore()
+    {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        SceneManager.LoadScene(+1);
         Destroy(gameObject);
     }
 }

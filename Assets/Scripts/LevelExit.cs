@@ -10,6 +10,7 @@ public class LevelExit : MonoBehaviour
     GameSession gameSession;
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
+    bool enteredDoorWay = false;
 
     private void Awake()
     {
@@ -29,8 +30,6 @@ public class LevelExit : MonoBehaviour
         {
             return;
         }
-
-
     }
 
     IEnumerator LoadNextLevel()
@@ -43,7 +42,7 @@ public class LevelExit : MonoBehaviour
         {
             nextSceneIndex = 0;
         }
-
+        enteredDoorWay = true;
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
     }  
