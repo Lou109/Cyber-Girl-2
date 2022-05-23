@@ -11,10 +11,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
     [SerializeField] int hacksToOpenDoor = 3;
-    LevelExit levelExit;
-   
-
-
+    
     void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -51,14 +48,7 @@ public class GameSession : MonoBehaviour
     {
         score += pointsForComputerPickup;
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
-        
-        if (score == hacksToOpenDoor)
-        {
-            ResetPickupScore();
-        }   
     }
-
-   
 
     public int GetScore()
     {
@@ -80,8 +70,8 @@ public class GameSession : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void ResetPickupScore()
-    {
+     public void ResetPickupScore()
+    {  
         score = 0;
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
         FindObjectOfType<ScenePersist>().ResetScenePersist();

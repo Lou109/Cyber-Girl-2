@@ -10,8 +10,7 @@ public class LevelExit : MonoBehaviour
     GameSession gameSession;
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
-    bool doorOpened;
-
+    
     private void Awake()
     {
         gameSession = FindObjectOfType<GameSession>();
@@ -33,25 +32,20 @@ public class LevelExit : MonoBehaviour
         }
     }
 
-    IEnumerator LoadNextLevel()
+    public IEnumerator LoadNextLevel()
     {
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
+        
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             nextSceneIndex = 0;
         }
 
-        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
-        DoorHasBeenOpened();
-    }
+        FindObjectOfType<GameSession>().ResetPickupScore();
 
-    public bool DoorHasBeenOpened()
-    {
-        return doorOpened = true;
     }
-
 }
