@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!95 &25889375 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7234494902255340338, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
-  m_PrefabInstance: {fileID: 7234494901966944761}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71325457
 GameObject:
   m_ObjectHideFlags: 0
@@ -63247,7 +63242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.889204
+      value: -10.903113
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.y
@@ -63442,11 +63437,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
---- !u!61 &7234494901966944762 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7234494902255340339, guid: 7ae6cabb64c2b48f18484eb8c7e4086b, type: 3}
-  m_PrefabInstance: {fileID: 7234494901966944761}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7644900393882015338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63571,13 +63561,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
-    - target: {fileID: 9125637023412345063, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
-      propertyPath: collider2D
-      value: 
-      objectReference: {fileID: 7234494901966944762}
-    - target: {fileID: 9125637023412345063, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
-      propertyPath: doorAnimator
-      value: 
-      objectReference: {fileID: 25889375}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}

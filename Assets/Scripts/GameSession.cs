@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] Image[]hearts;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
     [SerializeField] int hacksToOpenDoor = 3;
@@ -27,9 +28,25 @@ public class GameSession : MonoBehaviour
 
     void Start()
     {
-
-        livesText.text = playerLives.ToString();
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
+      
+    }
+
+   
+    public void Update()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < playerLives)
+            {
+                hearts[i].color = Color.white;
+            }
+            else
+            {
+                hearts[i].color = Color.clear;
+               
+            } 
+        }
     }
 
     public void ProcessPlayerDeath()
@@ -60,7 +77,8 @@ public class GameSession : MonoBehaviour
         playerLives --;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-        livesText.text = playerLives.ToString();
+
+        
     }
 
     void ResetGameSession()
