@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b85b2fadc474d47d1b797038b6dd34e2
+guid: da69ec3a16f6e4070a0314d87863b835
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_0
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 1920
+        height: 1080
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5db17ec63b834b2189cbfc8f197f1e7
+      internalID: 351742798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2160
+        width: 1920
+        height: 1080
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152e2efe04b6b4c96bdd0a19233e1d4a
+      internalID: -1771484815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2160
+        width: 1920
+        height: 1080
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe61212d4431f437784a2f2de52b0dc8
+      internalID: 131336914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c85428980322849dc879de5813723759
-      internalID: 1490712769
+      spriteID: e796b32faae384317a4bd364b8798d4f
+      internalID: -1360159564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_1
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_4
       rect:
         serializedVersion: 2
         x: 1920
@@ -151,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b7261b69ad947a3b1e87c74179472f
-      internalID: -1982263228
+      spriteID: f479a6db0c99a4fea99d64ab8cc4209e
+      internalID: 898838289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_2
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_5
       rect:
         serializedVersion: 2
         x: 3840
@@ -172,35 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1fe7f2212091415d86ad75ded33c0aa
-      internalID: 835232687
+      spriteID: f6948564f86df48ceab50733625d86de
+      internalID: 374408396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe00538c611124ab687df5fe2f5462a9
-      internalID: -1272530759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_4
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -214,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0080c9e5f6384e968ece6bbaf7db00d
-      internalID: 379752269
+      spriteID: 05b868b3f3cc44e1fab8823438c98e6b
+      internalID: -1249435297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_5
+      name: CyberGirlAnimMainMenuMasterSpriteSheet_7
       rect:
         serializedVersion: 2
         x: 1920
@@ -235,50 +277,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e12789426ed5451bbee029609fe2ad5
-      internalID: -1243222857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef979bcd1434c49948433097bcd7c8b2
-      internalID: 54856248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CyberGirlMainMenuSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7d520f9f3b6a42b994169696c65076d
-      internalID: 1981743926
+      spriteID: 095beabe767d84a9581c65cffd22f72b
+      internalID: -1900437847
       vertices: []
       indices: 
       edges: []
@@ -294,14 +294,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CyberGirlMainMenuSpriteSheet_4: 379752269
-      CyberGirlMainMenuSpriteSheet_2: 835232687
-      CyberGirlMainMenuSpriteSheet_6: 54856248
-      CyberGirlMainMenuSpriteSheet_1: -1982263228
-      CyberGirlMainMenuSpriteSheet_7: 1981743926
-      CyberGirlMainMenuSpriteSheet_5: -1243222857
-      CyberGirlMainMenuSpriteSheet_3: -1272530759
-      CyberGirlMainMenuSpriteSheet_0: 1490712769
+      CyberGirlAnimMainMenuMasterSpriteSheet_2: 131336914
+      CyberGirlAnimMainMenuMasterSpriteSheet_4: 898838289
+      CyberGirlAnimMainMenuMasterSpriteSheet_5: 374408396
+      CyberGirlAnimMainMenuMasterSpriteSheet_1: -1771484815
+      CyberGirlAnimMainMenuMasterSpriteSheet_7: -1900437847
+      CyberGirlAnimMainMenuMasterSpriteSheet_0: 351742798
+      CyberGirlAnimMainMenuMasterSpriteSheet_3: -1360159564
+      CyberGirlAnimMainMenuMasterSpriteSheet_6: -1249435297
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
