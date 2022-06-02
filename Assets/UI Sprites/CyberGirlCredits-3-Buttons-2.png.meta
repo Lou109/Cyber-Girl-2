@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d66b18ec8a17640e7a8d8d970034c40f
+guid: 23642aa4bf4034ef3b0e93b9f718cc3e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,12 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CyberGirl-3-MenuButtons_0
+      name: CyberGirlCredits-3-Buttons-2_0
       rect:
         serializedVersion: 2
         x: 2
         y: 2
-        width: 51
+        width: 75
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -130,19 +130,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5267275c6787c4c318a26fcccea0538a
-      internalID: 400512974
+      spriteID: fef772f42d61f4164997d551b10aabda
+      internalID: -2100078322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl-3-MenuButtons_1
+      name: CyberGirlCredits-3-Buttons-2_1
       rect:
         serializedVersion: 2
-        x: 55
+        x: 79
         y: 2
-        width: 51
+        width: 75
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -151,19 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2d6db4408c89498da80aef287275e44
-      internalID: 938333999
+      spriteID: c54af3ea41fa5416d9315a5a357b8e59
+      internalID: 1533408722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl-3-MenuButtons_2
+      name: CyberGirlCredits-3-Buttons-2_2
       rect:
         serializedVersion: 2
-        x: 108
+        x: 156
         y: 2
-        width: 51
+        width: 75
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8fa40fec13d34d1f939c624ae2933e5
-      internalID: -774287818
+      spriteID: fb6bb3544b32f4197a80f60fd96fd74d
+      internalID: 1928818257
       vertices: []
       indices: 
       edges: []
@@ -189,9 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CyberGirl-3-MenuButtons_0: 400512974
-      CyberGirl-3-MenuButtons_2: -774287818
-      CyberGirl-3-MenuButtons_1: 938333999
+      CyberGirlCredits-3-Buttons-2_2: 1928818257
+      CyberGirlCredits-3-Buttons-2_1: 1533408722
+      CyberGirlCredits-3-Buttons-2_0: -2100078322
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

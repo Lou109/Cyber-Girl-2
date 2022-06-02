@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1cdb61d4fe484519aabe2860d10e8b2
+guid: d0cf707e63d0145f091c134f78e36993
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CyberGirlCredits-3-Buttons_0
+      name: CyberGirl-3-QuitButtons2_0
       rect:
         serializedVersion: 2
         x: 2
         y: 2
-        width: 75
-        height: 18
+        width: 44
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d98fc4fb1a6794bcc8d04da03229f8f4
-      internalID: -1451046969
+      spriteID: fdf5349f4a273432bb4522ab7d54ef7c
+      internalID: 1729079719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlCredits-3-Buttons_1
+      name: CyberGirl-3-QuitButtons2_1
       rect:
         serializedVersion: 2
-        x: 79
+        x: 48
         y: 2
-        width: 75
-        height: 18
+        width: 44
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca93259d5c044889bb5ecc825d50894
-      internalID: -2107126282
+      spriteID: d8311a0e6e58a4585854ca993f11069a
+      internalID: -1458513475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirlCredits-3-Buttons_2
+      name: CyberGirl-3-QuitButtons2_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 94
         y: 2
-        width: 75
-        height: 18
+        width: 44
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78d2597d1fa974fd781af203f34c76a2
-      internalID: 1837130590
+      spriteID: 6525ed02d17c64858b21ce72af54e37d
+      internalID: 1137174953
       vertices: []
       indices: 
       edges: []
@@ -189,9 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CyberGirlCredits-3-Buttons_0: -1451046969
-      CyberGirlCredits-3-Buttons_2: 1837130590
-      CyberGirlCredits-3-Buttons_1: -2107126282
+      CyberGirl-3-QuitButtons2_0: 1729079719
+      CyberGirl-3-QuitButtons2_2: 1137174953
+      CyberGirl-3-QuitButtons2_1: -1458513475
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
