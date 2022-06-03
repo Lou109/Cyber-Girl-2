@@ -10,12 +10,12 @@ public class LevelExit : MonoBehaviour
     GameSession gameSession;
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
-    
-    private void Awake()
+   
+    void Awake()
     {
-        gameSession = FindObjectOfType<GameSession>();
+        gameSession = FindObjectOfType<GameSession>();    
     }
-
+ 
     public void OnTriggerEnter2D(Collider2D other)
     {
         int getTheScore = gameSession.GetScore();
@@ -37,8 +37,7 @@ public class LevelExit : MonoBehaviour
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
-        
-
+       
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             nextSceneIndex = 0;
