@@ -89,11 +89,9 @@ public class GameSession : MonoBehaviour
     }
 
      public void ResetPickupScore()
-    {  
+    {   
         score = 0;
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
-        FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(+1);
         Destroy(gameObject);
     }
 }
