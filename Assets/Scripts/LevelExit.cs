@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
@@ -10,18 +9,17 @@ public class LevelExit : MonoBehaviour
     [SerializeField] Animator animator = null;
     [SerializeField] string actionParameter = null;
 
-    SceneLoader sceneLoader;
-    ScenePersist scenePersist;
+    SceneLoader sceneLoader;  
     GameSession gameSession;
 
     void Awake()
     {
         gameSession = FindObjectOfType<GameSession>();
         sceneLoader = FindObjectOfType<SceneLoader>();
-        scenePersist = FindObjectOfType<ScenePersist>();
+       
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         int getTheScore = gameSession.GetScore();
 
@@ -36,6 +34,5 @@ public class LevelExit : MonoBehaviour
         {
         sceneLoader.LoadNextScene();
         gameSession.ResetPickupScore();
-        scenePersist.ResetScenePersist();
         }
     }
