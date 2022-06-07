@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 9125637023412345063, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: lives.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
 --- !u!4 &58105075 stripped
@@ -76724,7 +76728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.906911
+      value: -10.902743
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.y
