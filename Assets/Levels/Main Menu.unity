@@ -1083,6 +1083,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2634364783867535545, guid: b25b9696d5c734deb9ba0d2dcdaa1084, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e67b47b68e25647de902e1b1cfefa101, type: 3}
     - target: {fileID: 2634364783867535551, guid: b25b9696d5c734deb9ba0d2dcdaa1084, type: 3}
       propertyPath: m_Name
       value: Cyber-Girl-tune-loop
