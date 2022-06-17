@@ -64698,12 +64698,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd32bf5c1beb4a929e11f96f1d3e1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1.5
   lineOfSight: 9
-  shootingRange: 3
+  shootingRange: 5
   bullet: {fileID: 6459101517427021945, guid: e65e3b5cf60794bbeb12b4928a9cc24e, type: 3}
   bulletParent: {fileID: 600755574}
-  firerate: 1
+  firerate: 2
 --- !u!114 &1235736982114517656
 MonoBehaviour:
   m_ObjectHideFlags: 0

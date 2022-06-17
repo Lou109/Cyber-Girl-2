@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6459101517427021944}
   - component: {fileID: 6459101517427021949}
-  - component: {fileID: 6459101517427021950}
   - component: {fileID: 6459101517427021951}
   - component: {fileID: 2965974577662024498}
-  m_Layer: 0
+  - component: {fileID: -311830947451983689}
+  - component: {fileID: -2324071917034030077}
+  - component: {fileID: -4045899433301582267}
+  m_Layer: 15
   m_Name: Drone Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,22 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6459101517427021950
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6459101517427021945}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2201258, y: 0.094339624}
-  m_Direction: 1
 --- !u!50 &6459101517427021951
 Rigidbody2D:
   serializedVersion: 4
@@ -137,3 +123,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &-311830947451983689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459101517427021945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc7718588e254b38938dc68f7f60fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &-2324071917034030077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459101517427021945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9afd852f4f446619144f5667cc533f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &-4045899433301582267
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459101517427021945}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.2201258, y: 0.094339624}
+  m_Direction: 1
