@@ -64559,6 +64559,7 @@ GameObject:
   - component: {fileID: 2078178523}
   - component: {fileID: 2078178522}
   - component: {fileID: 2078178524}
+  - component: {fileID: 2078178525}
   m_Layer: 0
   m_Name: Enemy Drone
   m_TagString: Untagged
@@ -64653,6 +64654,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2078178525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078178521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd32bf5c1beb4a929e11f96f1d3e1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  lineOfSight: 9
 --- !u!114 &1235736982114517656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64782,7 +64797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.907117
+      value: -10.89118
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.y
