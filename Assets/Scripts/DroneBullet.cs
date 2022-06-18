@@ -7,8 +7,7 @@ public class DroneBullet : MonoBehaviour
     GameObject target;
     [SerializeField] float speed;
     Rigidbody2D bulletRB;
-
-
+    
     void Start()
     {
         bulletRB = GetComponent<Rigidbody2D>();
@@ -17,7 +16,8 @@ public class DroneBullet : MonoBehaviour
         bulletRB.velocity = new Vector2(moveDir.x, moveDir.y);
         Destroy(this.gameObject, 2);
     }
+ }
 
-   
-  
-}
+
+
+

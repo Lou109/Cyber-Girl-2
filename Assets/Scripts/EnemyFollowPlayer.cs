@@ -6,39 +6,37 @@ public class EnemyFollowPlayer : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float lineOfSight;
-    [SerializeField] float shootingRange;
-    [SerializeField] GameObject bullet;
-    [SerializeField] GameObject bulletParent;
-    [SerializeField] float firerate = 1f;
-    float nextFireTime;
-
+   
     Transform player;
+    Health health;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        health = GetComponent<Health>();
     }
 
 
     void Update()
     {
+        int healthAmount = health.GetHealth();
+
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSight && distanceFromPlayer > shootingRange)
+        if (distanceFromPlayer < lineOfSight )
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
         }
-        else if (distanceFromPlayer <= shootingRange && nextFireTime <Time.time)
+        if (healthAmount <= 0)
         {
-            Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
-            nextFireTime = Time.time + firerate;
-        }
+            speed = 0;
+        } 
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSight);
-        Gizmos.DrawWireSphere(transform.position, shootingRange);
+       
     }
 
 }
