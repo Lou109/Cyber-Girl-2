@@ -21,7 +21,8 @@ public class EnemyShooter : MonoBehaviour
     void Start()
     {
         health = GetComponent<Health>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;  
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        
     }
 
     void Update()

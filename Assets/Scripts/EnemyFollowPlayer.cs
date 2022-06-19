@@ -6,16 +6,18 @@ public class EnemyFollowPlayer : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float lineOfSight;
+    [SerializeField] CircleCollider2D mycircleCollider;
    
     Transform player;
     Health health;
-
+    
+   
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         health = GetComponent<Health>();
+        mycircleCollider = GetComponent<CircleCollider2D>();
     }
-
 
     void Update()
     {
@@ -29,6 +31,8 @@ public class EnemyFollowPlayer : MonoBehaviour
         if (healthAmount <= 0)
         {
             speed = 0;
+            mycircleCollider.enabled = false;
+            
         } 
     }
 
