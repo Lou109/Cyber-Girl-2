@@ -59,14 +59,14 @@ TagManager:
   - name: No Collider
     uniqueID: 4049464527
     locked: 0
-  - name: Water
-    uniqueID: 3885572879
-    locked: 0
   - name: Door
     uniqueID: 1393527333
     locked: 0
   - name: Platforms
     uniqueID: 3135148825
+    locked: 0
+  - name: Water
+    uniqueID: 3885572879
     locked: 0
   - name: Climbing
     uniqueID: 4035923869
