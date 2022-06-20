@@ -7,16 +7,19 @@ public class EnemyFollowPlayer : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float lineOfSight;
     [SerializeField] CircleCollider2D mycircleCollider;
+    [SerializeField] AudioClip explosionSound;
+    [SerializeField] AudioSource myAudioSource;
+    bool playExplosionSFX;
    
     Transform player;
     Health health;
     
-   
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         health = GetComponent<Health>();
         mycircleCollider = GetComponent<CircleCollider2D>();
+       
     }
 
     void Update()
@@ -28,11 +31,13 @@ public class EnemyFollowPlayer : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
         }
-        if (healthAmount <= 0)
+        if (healthAmount <= 0 && !playExplosionSFX)
         {
-            speed = 0;
             mycircleCollider.enabled = false;
-            
+            speed = 0;
+            myAudioSource.PlayOneShot(explosionSound);
+            playExplosionSFX = true;
+
         } 
     }
 
@@ -40,7 +45,5 @@ public class EnemyFollowPlayer : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSight);
-       
     }
-
 }
