@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] Image[]hearts;
+    [SerializeField] Image[]liveS;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
     [SerializeField] int hacksToOpenDoor = 3;
@@ -36,15 +36,15 @@ public class GameSession : MonoBehaviour
    
     public void Update()
     {
-        for (int i = 0; i < hearts.Length; i++)
+        for (int i = 0; i < liveS.Length; i++)
         {
             if (i < playerLives)
             {
-                hearts[i].color = Color.white;
+                liveS[i].color = Color.white;
             }
             else
             {
-                hearts[i].color = Color.clear;
+                liveS[i].color = Color.clear;
                
             } 
         }
@@ -77,15 +77,13 @@ public class GameSession : MonoBehaviour
     {
         playerLives --;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-
-        
+        SceneManager.LoadScene(currentSceneIndex);     
     }
 
     void ResetGameSession()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
         Destroy(gameObject);
     }
 
