@@ -62,6 +62,9 @@ TagManager:
   - name: Door
     uniqueID: 1393527333
     locked: 0
+  - name: Saw
+    uniqueID: 2586733151
+    locked: 0
   - name: Platforms
     uniqueID: 3135148825
     locked: 0
