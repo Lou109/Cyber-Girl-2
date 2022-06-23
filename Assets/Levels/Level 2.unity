@@ -1832,7 +1832,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4992593247991862892, guid: 598bb5353c6164ba0a4938eac1ba2914, type: 3}
       propertyPath: speed
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4992593247991862892, guid: 598bb5353c6164ba0a4938eac1ba2914, type: 3}
       propertyPath: pos1.x
@@ -74115,7 +74115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8196786105656336152, guid: 1d1de82923c7648c086162ecc72c6cc7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.49
+      value: 40.44
       objectReference: {fileID: 0}
     - target: {fileID: 8196786105656336152, guid: 1d1de82923c7648c086162ecc72c6cc7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74157,6 +74157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Platform Mid
       objectReference: {fileID: 0}
+    - target: {fileID: 8196786105656336155, guid: 1d1de82923c7648c086162ecc72c6cc7, type: 3}
+      propertyPath: pos1.x
+      value: 40.44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d1de82923c7648c086162ecc72c6cc7, type: 3}
@@ -74179,7 +74183,7 @@ PrefabInstance:
       objectReference: {fileID: 523142812}
     - target: {fileID: 4781639362794833798, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7782608
+      value: 1.7760253
       objectReference: {fileID: 0}
     - target: {fileID: 4781639362794833816, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74203,7 +74207,7 @@ PrefabInstance:
       objectReference: {fileID: 523142812}
     - target: {fileID: 4781639363035301051, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7782608
+      value: 1.7760253
       objectReference: {fileID: 0}
     - target: {fileID: 4781639363035301053, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74231,7 +74235,7 @@ PrefabInstance:
       objectReference: {fileID: 523142812}
     - target: {fileID: 4781639363287774687, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7777778
+      value: 1.7760253
       objectReference: {fileID: 0}
     - target: {fileID: 4781639363304294780, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_RootOrder
@@ -74283,7 +74287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.902211
+      value: -10.911157
       objectReference: {fileID: 0}
     - target: {fileID: 4781639364352556918, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.y
