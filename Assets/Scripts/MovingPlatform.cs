@@ -11,6 +11,6 @@ public class MovingPlatform : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(pos1, pos2, Mathf.PingPong(Time.realtimeSinceStartup * speed, 1.0f));
+        transform.position = Vector3.Lerp(pos1, pos2, Mathf.PingPong(Time.time * speed, 1.0f));
     }
 }

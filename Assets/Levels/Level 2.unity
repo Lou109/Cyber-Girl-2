@@ -131,6 +131,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 586557392, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 105.299805
+      objectReference: {fileID: 0}
+    - target: {fileID: 586557392, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.099976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111488596, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 35.100098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111488596, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.099976
+      objectReference: {fileID: 0}
     - target: {fileID: 9125637023412345060, guid: 3be3fbefc8ab14c7c88e92282b457736, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -7368,14 +7384,14 @@ Tilemap:
   - m_RefCount: 14
     m_Data:
       e00: -1
-      e01: -0.00000008742278
-      e02: -0
+      e01: -0
+      e02: 0
       e03: 0
-      e10: 0.00000008742278
+      e10: -0
       e11: -1
       e12: 0
       e13: 0
-      e20: 0
+      e20: -0
       e21: -0
       e22: 1
       e23: 0
@@ -74161,6 +74177,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 523142812}
+    - target: {fileID: 4781639362794833798, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7773943
+      objectReference: {fileID: 0}
     - target: {fileID: 4781639362794833816, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.990927
@@ -74181,6 +74201,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 523142812}
+    - target: {fileID: 4781639363035301051, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7773943
+      objectReference: {fileID: 0}
     - target: {fileID: 4781639363035301053, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.990927
@@ -74205,6 +74229,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 523142812}
+    - target: {fileID: 4781639363287774687, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.777998
+      objectReference: {fileID: 0}
     - target: {fileID: 4781639363304294780, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -74267,7 +74295,7 @@ PrefabInstance:
       objectReference: {fileID: 523142811}
     - target: {fileID: 4781639364609293277, guid: 0925612ed9efc40bcbd5bb48ac420a19, type: 3}
       propertyPath: m_ChildCameras.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
