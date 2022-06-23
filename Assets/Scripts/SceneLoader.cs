@@ -20,4 +20,15 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(5);
     }
+
+    public void LoadAbout()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }

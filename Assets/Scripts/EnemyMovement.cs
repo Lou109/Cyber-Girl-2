@@ -7,12 +7,14 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidbody;
     CapsuleCollider2D capsuleCollider;
+    BoxCollider2D boxCollider2D;
     Health health;
      
     void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
     }
     void Start()
     {
@@ -37,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.zero;
             capsuleCollider.enabled = false;
+            boxCollider2D.enabled = false;
         }
     }
 
