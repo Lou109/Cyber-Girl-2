@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Ground") && !other.gameObject.CompareTag("MovingPlatform"))
         {
             moving = false;
             this.transform.parent = null;
@@ -111,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //do stuff
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
+            this.transform.parent = null;
         }
     }
 
