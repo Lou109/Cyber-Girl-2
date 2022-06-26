@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
+        boxCollider2D = GetComponentInParent<BoxCollider2D>();
     }
     void Start()
     {
@@ -39,7 +39,6 @@ public class EnemyMovement : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.zero;
             capsuleCollider.enabled = false;
-            boxCollider2D.enabled = false;
         }
     }
 
