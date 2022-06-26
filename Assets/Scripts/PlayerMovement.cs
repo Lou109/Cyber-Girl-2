@@ -168,6 +168,11 @@ public class PlayerMovement : MonoBehaviour
         {
             DieResult();
         }
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("CrushingHazards"))
+            && myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            DieResult();
+        }
 
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Prevent Flip")))
         {

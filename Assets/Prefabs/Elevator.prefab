@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4992593247566084968}
   - component: {fileID: 4992593247566084969}
-  m_Layer: 12
+  m_Layer: 23
   m_Name: DeathCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ Transform:
   - {fileID: 4992593247006244605}
   - {fileID: 4992593247566084968}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4992593247991862894
 Rigidbody2D:
@@ -322,6 +322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9490bef606414aa092e9c3ce54b9637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos1: {x: 39.5, y: -7.5, z: 0}
+  pos1: {x: 39.5, y: -8.2, z: 0}
   pos2: {x: 39.5, y: 6.5, z: 0}
   speed: 0.1
