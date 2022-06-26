@@ -65,6 +65,7 @@ PolygonCollider2D:
       - {x: -0.50047874, y: -0.65625}
       - {x: -0.4310875, y: -0.96875}
       - {x: 0.5039234, y: -0.96875}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3967535237346459875
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,73 +89,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3967535237346459875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: -0.47, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.024999619, y: -0.4699998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3967535238150834375}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3967535238150834378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3967535238150834375}
-  - component: {fileID: 3967535238150834370}
-  m_Layer: 11
-  m_Name: Cyber Dog
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3967535238150834375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3967535238150834378}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3967535237346459872}
   m_Father: {fileID: 3967535238978145673}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &3967535238150834370
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3967535238150834378}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.5668726, y: -1.1046889}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1875, y: 1.9375}
-    newSize: {x: 1.1875, y: 1.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.04053688, y: 0.23904276}
-  m_EdgeRadius: 0
 --- !u!1 &3967535238978145675
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,10 +132,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3967535238150834375}
   - {fileID: 4990160363092418033}
+  - {fileID: 3967535237346459872}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3967535238978145672
 BoxCollider2D:
@@ -277,6 +219,7 @@ PolygonCollider2D:
       - {x: -0.50047874, y: -0.65625}
       - {x: -0.4310875, y: -0.96875}
       - {x: 0.5039234, y: -0.96875}
+  m_UseDelaunayMesh: 0
 --- !u!95 &3967535238978145665
 Animator:
   serializedVersion: 4
@@ -336,7 +279,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1352652339
-  m_SortingLayer: 9
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: -843175882, guid: 3b4b00c6d7fda4a249feacce4651a703, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -363,9 +306,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   runSpeed: 6
-  myboxCollider: {fileID: 3967535238150834370}
+  myboxCollider: {fileID: 0}
   animator: {fileID: 3967535238978145665}
   childpolygon: {fileID: 1951745168088323619}
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7644900394320429224
 MonoBehaviour:
   m_ObjectHideFlags: 0

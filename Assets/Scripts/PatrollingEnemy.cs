@@ -7,10 +7,12 @@ public class PatrollingEnemy : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] float runSpeed;
     Rigidbody2D myRigidbody;
-    [SerializeField] BoxCollider2D myboxCollider;
+    BoxCollider2D myboxCollider;
     Health health;
     [SerializeField] Animator animator;
     [SerializeField] PolygonCollider2D childpolygon;
+    [SerializeField] Transform[] waypoints;
+    int waypointIndex = 0;
 
 
     void Awake()
@@ -20,6 +22,7 @@ public class PatrollingEnemy : MonoBehaviour
     }
     void Start()
     {
+        transform.position = waypoints[waypointIndex].transform.position;
         health = GetComponent<Health>();
         childpolygon = GetComponent<PolygonCollider2D>();
     }
@@ -32,17 +35,26 @@ public class PatrollingEnemy : MonoBehaviour
     public void MoveEnemy()
     {
         int healthAmount = health.GetHealth();
+        transform.position = Vector2.MoveTowards(transform.position,
+        waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
 
-
-        if (healthAmount >= 0)
+        if (transform.position == waypoints[waypointIndex].transform.position)
         {
-            myRigidbody.velocity = new Vector2(moveSpeed, 0f);
+            waypointIndex += 1;
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+        }
+
+        if (waypointIndex == waypoints.Length)
+        {
+            waypointIndex = 0;
+            transform.localScale = new Vector2(-Mathf.Sign(myRigidbody.velocity.x), 1f);
         }
 
         else if (healthAmount <= 0)
         {
             childpolygon.enabled = false;
-            myRigidbody.velocity = Vector2.zero;
+            myboxCollider.enabled = false;
+            moveSpeed = 0f;
             animator.SetTrigger("isdogDying");
             
         }
@@ -52,11 +64,11 @@ public class PatrollingEnemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            moveSpeed = -runSpeed;
-            bool enemyHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-            animator.SetBool("isdogRunning", enemyHasHorizontalSpeed);
+            moveSpeed = runSpeed;
             
+            animator.SetTrigger("isdogRunning");
             myboxCollider.enabled = false;
+            AfterPlayerDies();
         }
     }
 
@@ -64,22 +76,10 @@ public class PatrollingEnemy : MonoBehaviour
     {
         if (childpolygon.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
-            myRigidbody.velocity = Vector2.zero;
+            moveSpeed = 0f;
             animator.SetTrigger("isdogBites");
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ground"))
-        {
-            moveSpeed = -moveSpeed;
-            FlipEnemyFacing();
-        }
-
-        void FlipEnemyFacing()
-        {
-            transform.localScale = new Vector2(-Mathf.Sign(myRigidbody.velocity.x), 1f);
-        }
-    }
+   
 }   
