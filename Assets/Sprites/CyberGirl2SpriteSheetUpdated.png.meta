@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98b54615554324de391a563c4ef3fefd
+guid: 6fbe06bb5b51d4720a7fa8a5f565f96a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,13 +64,14 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_0
+      name: CyberGirl2SpriteSheetUpdated_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80818b8489d854ff4bc34e192b9b8af0
-      internalID: 347792390
+      spriteID: ebdd0c82a726948b69e21e49ffeaddfa
+      internalID: 1783680653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_1
+      name: CyberGirl2SpriteSheetUpdated_1
       rect:
         serializedVersion: 2
         x: 37
@@ -151,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4089f7becc35489aa375ffe9189f88a
-      internalID: -1217787225
+      spriteID: bf41e51b572df49ce8b71cabf4781bb8
+      internalID: -230436717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_2
+      name: CyberGirl2SpriteSheetUpdated_2
       rect:
         serializedVersion: 2
         x: 74
@@ -172,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 424c5de95c39d4fbc8100b3105288abc
-      internalID: -1279256243
+      spriteID: 84c399f3d4c394c559157fc4b98495ca
+      internalID: -1886932289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_3
+      name: CyberGirl2SpriteSheetUpdated_3
       rect:
         serializedVersion: 2
         x: 111
@@ -193,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2adc23b67b5834eacb016da3ad367d2f
-      internalID: -1755289525
+      spriteID: 9222fc8f012c14750a09aef0570ab450
+      internalID: -1996245608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_4
+      name: CyberGirl2SpriteSheetUpdated_4
       rect:
         serializedVersion: 2
         x: 148
@@ -214,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c6d6b35ee0194f5db4c9873089391e6
-      internalID: -773240910
+      spriteID: 9e604e087c9024fc18395890ee6d3daf
+      internalID: -673538687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_5
+      name: CyberGirl2SpriteSheetUpdated_5
       rect:
         serializedVersion: 2
         x: 185
@@ -235,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c65f9703ed09c46e8875ebadd72e0250
-      internalID: 1006197367
+      spriteID: 478d2fab00271473690cfa5e6b0660a6
+      internalID: 183407020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_6
+      name: CyberGirl2SpriteSheetUpdated_6
       rect:
         serializedVersion: 2
         x: 0
@@ -256,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f3a8206019184c83aaa50da097faa94
-      internalID: -624793124
+      spriteID: c0dfd81b38c6b47fba99628a7e834f9b
+      internalID: 272023487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_7
+      name: CyberGirl2SpriteSheetUpdated_7
       rect:
         serializedVersion: 2
         x: 37
@@ -277,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 417b5ae088896490ab503bf65857ed8f
-      internalID: -1483990293
+      spriteID: fd349c221160c43ce825d8c462fbdb39
+      internalID: 168293730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_8
+      name: CyberGirl2SpriteSheetUpdated_8
       rect:
         serializedVersion: 2
         x: 74
@@ -298,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21c39d40eacbe415cb496cbe92b5c734
-      internalID: 747485441
+      spriteID: 5d2347624b06b4c40bbc511061bccfff
+      internalID: -1006471221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_9
+      name: CyberGirl2SpriteSheetUpdated_9
       rect:
         serializedVersion: 2
         x: 111
@@ -319,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83657de5fa98344fdad573e4858c95bd
-      internalID: 1778785974
+      spriteID: a3ddd2c895e024ac5913e237b57af36a
+      internalID: -185781463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_10
+      name: CyberGirl2SpriteSheetUpdated_10
       rect:
         serializedVersion: 2
         x: 148
@@ -340,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b2f5a2a898ec4e4586816aac3eeebfe
-      internalID: -410654507
+      spriteID: a192c70ad25fe4d96ba644a8dc54a3d6
+      internalID: -176096052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_11
+      name: CyberGirl2SpriteSheetUpdated_11
       rect:
         serializedVersion: 2
         x: 185
@@ -361,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d9b7afba89f4471bb0152c979e4330f
-      internalID: 1461386750
+      spriteID: 71869a16c94c64d58902a7e3e556d8e9
+      internalID: -1033856407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_12
+      name: CyberGirl2SpriteSheetUpdated_12
       rect:
         serializedVersion: 2
         x: 0
@@ -382,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8fac7bb07ff44788af82c6ca292e2e5
-      internalID: 114677145
+      spriteID: e678b63043c90461e88c8bfec4c89dbe
+      internalID: 996373352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_13
+      name: CyberGirl2SpriteSheetUpdated_13
       rect:
         serializedVersion: 2
         x: 37
@@ -403,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6bc61666b3664da0911a3bb522d7f80
-      internalID: 911123809
+      spriteID: 37c698ffffedf4b889395f605b42dd7b
+      internalID: 632829797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_14
+      name: CyberGirl2SpriteSheetUpdated_14
       rect:
         serializedVersion: 2
         x: 74
@@ -424,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 567bc52094e8a4819a12a76985052e1d
-      internalID: -608673995
+      spriteID: 7cd7a94876d2b49078b716ccf752b772
+      internalID: -994867152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_15
+      name: CyberGirl2SpriteSheetUpdated_15
       rect:
         serializedVersion: 2
         x: 111
@@ -445,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb0f5b7e0ec04e4591052890e64832b
-      internalID: -6361260
+      spriteID: c33b92fdee52d49298077b1b6f1b3477
+      internalID: 1780364833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_16
+      name: CyberGirl2SpriteSheetUpdated_16
       rect:
         serializedVersion: 2
         x: 148
@@ -466,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1decaa46c8f9640afac5d640612887e4
-      internalID: -666096676
+      spriteID: 0318f8c5c6bc7423a87f213743ba0de9
+      internalID: -1596428390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_17
+      name: CyberGirl2SpriteSheetUpdated_17
       rect:
         serializedVersion: 2
         x: 185
@@ -487,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 581ccef3703164818bb40375ddece1dd
-      internalID: 1870538851
+      spriteID: aac9b957fa0764a4f837887b6d6d5e6d
+      internalID: 1068728248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_18
+      name: CyberGirl2SpriteSheetUpdated_18
       rect:
         serializedVersion: 2
         x: 0
@@ -508,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a83ff8523b134e10ad5a2dec1d0391d
-      internalID: -348337791
+      spriteID: 5cb53bb7bcd3d468990c6a2b8f9695b4
+      internalID: 559212007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_19
+      name: CyberGirl2SpriteSheetUpdated_19
       rect:
         serializedVersion: 2
         x: 37
@@ -529,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e7d8207de644778bcb4dade823c011
-      internalID: 1148080914
+      spriteID: 6e812315a87fb441aa87f7fa04991514
+      internalID: -1573580762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_20
+      name: CyberGirl2SpriteSheetUpdated_20
       rect:
         serializedVersion: 2
         x: 74
@@ -550,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 638092f36e67c44b0aa9df62460dced7
-      internalID: 783510940
+      spriteID: da8fdd34efbcc4190b93212160619403
+      internalID: -2118545479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_21
+      name: CyberGirl2SpriteSheetUpdated_21
       rect:
         serializedVersion: 2
         x: 111
@@ -571,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334c3e1bd02f34d15ac9717efbbf34c3
-      internalID: 352657332
+      spriteID: 698821034c3f545c8a334a82fdabc1d6
+      internalID: 1940126765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_22
+      name: CyberGirl2SpriteSheetUpdated_22
       rect:
         serializedVersion: 2
         x: 148
@@ -592,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eb500983ef964f50b66333971e02012
-      internalID: 1118896729
+      spriteID: c5f6382057cc0414db871044d9515ca0
+      internalID: 1689904709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CyberGirl2SpriteSheet_23
+      name: CyberGirl2SpriteSheetUpdated_23
       rect:
         serializedVersion: 2
         x: 185
@@ -613,8 +615,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e3787af3b8554d0da84951e0b46033e
-      internalID: 260320279
+      spriteID: f892e040ca43b42479d55fe1ad46863a
+      internalID: 2006955774
       vertices: []
       indices: 
       edges: []
@@ -630,33 +632,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CyberGirl2SpriteSheet_21: 352657332
-      CyberGirl2SpriteSheet_18: -348337791
-      CyberGirl2SpriteSheet_23: 260320279
-      CyberGirl2SpriteSheet_8: 747485441
-      CyberGirl2SpriteSheet_14: -608673995
-      CyberGirl2SpriteSheet_19: 1148080914
-      CyberGirl2SpriteSheet_10: -410654507
-      CyberGirl2SpriteSheet_5: 1006197367
-      CyberGirl2SpriteSheet_22: 1118896729
-      CyberGirl2SpriteSheet_1: -1217787225
-      CyberGirl2SpriteSheet_17: 1870538851
-      CyberGirl2SpriteSheet_9: 1778785974
-      CyberGirl2SpriteSheet_16: -666096676
-      CyberGirl2SpriteSheet_4: -773240910
-      CyberGirl2SpriteSheet_12: 114677145
-      CyberGirl2SpriteSheet_0: 347792390
-      CyberGirl2SpriteSheet_11: 1461386750
-      CyberGirl2SpriteSheet_7: -1483990293
-      CyberGirl2SpriteSheet_13: 911123809
-      CyberGirl2SpriteSheet_3: -1755289525
-      CyberGirl2SpriteSheet_15: -6361260
-      CyberGirl2SpriteSheet_2: -1279256243
-      CyberGirl2SpriteSheet_20: 783510940
-      CyberGirl2SpriteSheet_6: -624793124
+      CyberGirl2SpriteSheetUpdated_23: 2006955774
+      CyberGirl2SpriteSheetUpdated_3: -1996245608
+      CyberGirl2SpriteSheetUpdated_13: 632829797
+      CyberGirl2SpriteSheetUpdated_19: -1573580762
+      CyberGirl2SpriteSheetUpdated_12: 996373352
+      CyberGirl2SpriteSheetUpdated_9: -185781463
+      CyberGirl2SpriteSheetUpdated_11: -1033856407
+      CyberGirl2SpriteSheetUpdated_22: 1689904709
+      CyberGirl2SpriteSheetUpdated_5: 183407020
+      CyberGirl2SpriteSheetUpdated_14: -994867152
+      CyberGirl2SpriteSheetUpdated_18: 559212007
+      CyberGirl2SpriteSheetUpdated_4: -673538687
+      CyberGirl2SpriteSheetUpdated_7: 168293730
+      CyberGirl2SpriteSheetUpdated_8: -1006471221
+      CyberGirl2SpriteSheetUpdated_15: 1780364833
+      CyberGirl2SpriteSheetUpdated_10: -176096052
+      CyberGirl2SpriteSheetUpdated_20: -2118545479
+      CyberGirl2SpriteSheetUpdated_16: -1596428390
+      CyberGirl2SpriteSheetUpdated_2: -1886932289
+      CyberGirl2SpriteSheetUpdated_17: 1068728248
+      CyberGirl2SpriteSheetUpdated_21: 1940126765
+      CyberGirl2SpriteSheetUpdated_6: 272023487
+      CyberGirl2SpriteSheetUpdated_1: -230436717
+      CyberGirl2SpriteSheetUpdated_0: 1783680653
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
