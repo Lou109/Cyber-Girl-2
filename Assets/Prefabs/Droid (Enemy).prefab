@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 3246983206729627218}
   - component: {fileID: 3246983206729627219}
   - component: {fileID: 3246983206729627216}
-  - component: {fileID: 3246983206729627213}
   - component: {fileID: 1590963426}
   - component: {fileID: 4723176399473646685}
+  - component: {fileID: 8617733359192632259}
   m_Layer: 11
   m_Name: Droid (Enemy)
   m_TagString: Untagged
@@ -160,7 +160,7 @@ Transform:
   - {fileID: 3246983205531681519}
   - {fileID: 3683427611701498979}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3246983206729627221
 SpriteRenderer:
@@ -284,24 +284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  boxCollider2D: {fileID: 1049783402681398461}
---- !u!114 &3246983206729627213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3246983206729627222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b788952e8131b40638e0536a6dbaac53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3246983206729627219}
-  triggerParameter: dyingDroid
-  impactEffect: {fileID: 4381387036837862549, guid: ddb2776a0ea044fdb971ffb550f5aafe, type: 3}
-  firepoint: {fileID: 3246983205531681520}
-  health: 50
 --- !u!82 &1590963426
 AudioSource:
   m_ObjectHideFlags: 0
@@ -417,3 +399,20 @@ MonoBehaviour:
   gun: {fileID: 3246983205408274881}
   enemyShootingAudio: {fileID: 1590963426}
   shootingRange: 4
+--- !u!114 &8617733359192632259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246983206729627222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6af398ef19e4ba99c0960617702630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3246983206729627219}
+  triggerParameter: dyingDroid
+  impactEffect: {fileID: 4381387036837862549, guid: ddb2776a0ea044fdb971ffb550f5aafe, type: 3}
+  firepoint: {fileID: 3246983205531681520}
+  health: 50

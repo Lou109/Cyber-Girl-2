@@ -8,7 +8,7 @@ public class PatrollingEnemy : MonoBehaviour
     [SerializeField] float runSpeed;
     Rigidbody2D myRigidbody;
     BoxCollider2D myboxCollider;
-    Health health;
+    HealthEnemy healthEnemy;
     [SerializeField] Animator animator;
     [SerializeField] PolygonCollider2D childpolygon;
     [SerializeField] Transform[] waypoints;
@@ -23,7 +23,7 @@ public class PatrollingEnemy : MonoBehaviour
     void Start()
     {
         transform.position = waypoints[waypointIndex].transform.position;
-        health = GetComponent<Health>();
+        healthEnemy = GetComponent<HealthEnemy>();
         childpolygon = GetComponent<PolygonCollider2D>();
     }
 
@@ -34,7 +34,7 @@ public class PatrollingEnemy : MonoBehaviour
     }
     public void MoveEnemy()
     {
-        int healthAmount = health.GetHealth();
+        int healthAmount = healthEnemy.GetHealth();
         transform.position = Vector2.MoveTowards(transform.position,
         waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
 

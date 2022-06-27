@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     CapsuleCollider2D capsuleCollider;
     BoxCollider2D boxCollider2D;
-    Health health;
+    HealthEnemy healthEnemy;
      
     void Awake()
     {
@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void Start()
     {
-        health = GetComponent<Health>();
+        healthEnemy = GetComponent<HealthEnemy>();
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class EnemyMovement : MonoBehaviour
     }
     public void MoveEnemy()
     {
-        int healthAmount = health.GetHealth();
+        int healthAmount = healthEnemy.GetHealth();
 
 
         if (healthAmount >= 0)

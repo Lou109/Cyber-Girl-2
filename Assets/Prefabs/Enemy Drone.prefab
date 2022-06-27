@@ -43,12 +43,12 @@ GameObject:
   - component: {fileID: 8574903504410942021}
   - component: {fileID: 8574903504410942019}
   - component: {fileID: 8574903504410942018}
-  - component: {fileID: 8574903504410942017}
   - component: {fileID: 8574903504410942016}
   - component: {fileID: 8574903504410942079}
   - component: {fileID: 8574903504410942078}
   - component: {fileID: 8574903504410942077}
   - component: {fileID: 8574903504410942076}
+  - component: {fileID: 2082115085409874384}
   m_Layer: 11
   m_Name: Enemy Drone
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Transform:
   - {fileID: 8574903505351486440}
   - {fileID: 8574903503866538077}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8574903504410942021
 SpriteRenderer:
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1352652339
-  m_SortingLayer: 11
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: -364549205, guid: 1d87ed1a667fd4eed90b426b7cb04b7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -162,23 +162,6 @@ MonoBehaviour:
   mycircleCollider: {fileID: 8574903504410942016}
   explosionSound: {fileID: 8300000, guid: 44fe2085f219b46ab95e8312de0de9bf, type: 3}
   myAudioSource: {fileID: 8574903504410942079}
---- !u!114 &8574903504410942017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8574903504410942022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b788952e8131b40638e0536a6dbaac53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 8574903504410942019}
-  triggerParameter: droneExplode
-  impactEffect: {fileID: 4381387036837862549, guid: ddb2776a0ea044fdb971ffb550f5aafe, type: 3}
-  firepoint: {fileID: 8574903503866538078}
-  health: 15
 --- !u!58 &8574903504410942016
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -344,6 +327,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2082115085409874384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574903504410942022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6af398ef19e4ba99c0960617702630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8574903504410942019}
+  triggerParameter: droneExplode
+  impactEffect: {fileID: 4381387036837862549, guid: ddb2776a0ea044fdb971ffb550f5aafe, type: 3}
+  firepoint: {fileID: 8574903503866538078}
+  health: 50
 --- !u!1 &8574903505351486441
 GameObject:
   m_ObjectHideFlags: 0

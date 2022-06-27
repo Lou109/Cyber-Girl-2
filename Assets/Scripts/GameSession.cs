@@ -30,7 +30,6 @@ public class GameSession : MonoBehaviour
     void Start()
     {
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
-      
     }
 
    
@@ -77,7 +76,8 @@ public class GameSession : MonoBehaviour
     {
         playerLives --;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);    
+        SceneManager.LoadScene(currentSceneIndex);
+
     }
 
     void ResetGameSession()
@@ -88,7 +88,8 @@ public class GameSession : MonoBehaviour
     }
 
      public void ResetPickupScore()
-    {   
+    {
+
         score = 0;
         scoreText.text = "Hacks To Open Door: " + score + "/" + hacksToOpenDoor;
         Destroy(gameObject);

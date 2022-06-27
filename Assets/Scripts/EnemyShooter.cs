@@ -13,14 +13,14 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] float shootingRange = 4f;
    
     Transform player;
-    Health health;
+    HealthEnemy healthEnemy;
     bool enemyisFiring = true;
     Coroutine firingCoroutine;
     float xSpeed;
 
     void Start()
     {
-        health = GetComponent<Health>();
+        healthEnemy = GetComponent<HealthEnemy>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         
     }
@@ -53,7 +53,7 @@ public class EnemyShooter : MonoBehaviour
     {
         while (true)
         {
-            int healthAmount = health.GetHealth();
+            int healthAmount = healthEnemy.GetHealth();
 
             if (healthAmount >= 0)
             {

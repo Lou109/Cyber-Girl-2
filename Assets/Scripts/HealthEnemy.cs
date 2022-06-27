@@ -2,22 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class HealthEnemy : MonoBehaviour
 {
     [SerializeField] Animator animator = null;
     [SerializeField] string triggerParameter = null;
     [SerializeField] ParticleSystem impactEffect = null;
     [SerializeField] GameObject firepoint;
-    [SerializeField] int currentHealth = 50;
-    [SerializeField] int maxHealth = 50;
-    public HealthBar healthBar;
-    
+    [SerializeField] int enemyHealth = 50;
 
     void Start()
     {
         impactEffect.GetComponent<ParticleSystem>();
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -34,15 +29,13 @@ public class Health : MonoBehaviour
 
     public int GetHealth()
     {
-        return currentHealth;
+        return enemyHealth;
     }
 
     void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.GetHealth(currentHealth);
-
-        if (currentHealth < 0)
+        enemyHealth -= damage;
+        if (enemyHealth < 0)
         {
             animator.SetTrigger(triggerParameter);
         }

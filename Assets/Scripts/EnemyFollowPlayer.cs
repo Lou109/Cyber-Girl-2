@@ -12,19 +12,19 @@ public class EnemyFollowPlayer : MonoBehaviour
     bool playExplosionSFX;
    
     Transform player;
-    Health health;
+    HealthEnemy healthEnemy;
     
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        health = GetComponent<Health>();
+        healthEnemy = GetComponent<HealthEnemy>();
         mycircleCollider = GetComponent<CircleCollider2D>();
        
     }
 
     void Update()
     {
-        int healthAmount = health.GetHealth();
+        int healthAmount = healthEnemy.GetHealth();
 
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
         if (distanceFromPlayer < lineOfSight )

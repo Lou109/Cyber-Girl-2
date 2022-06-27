@@ -162,7 +162,7 @@ Transform:
   - {fileID: 213857629}
   - {fileID: 1186108390}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4939057132776045202
 Animator:
@@ -223,14 +223,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2143688915
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
-  m_Sprite: {fileID: 347792390, guid: 98b54615554324de391a563c4ef3fefd, type: 3}
+  m_Sprite: {fileID: 1783680653, guid: 6fbe06bb5b51d4720a7fa8a5f565f96a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.15625, y: 1.15625}
+  m_Size: {x: 1.163522, y: 1.163522}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -337,7 +337,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.163522, y: 1.163522}
-    newSize: {x: 1.15625, y: 1.15625}
+    newSize: {x: 1.163522, y: 1.163522}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
   projectileLifetime: 5
   firingRate: 0.4
   gun: {fileID: 213857629}
-  useAI: 0
+  playerShootingAudio: {fileID: 523142821}
   isFiring: 0
 --- !u!114 &1417302756
 MonoBehaviour:
@@ -380,7 +380,9 @@ MonoBehaviour:
   triggerParameter: Dying
   impactEffect: {fileID: 4381387036837862549, guid: f91cc831f246d491386cf936683a9274, type: 3}
   firepoint: {fileID: 1186108389}
-  health: 50
+  currentHealth: 50
+  maxHealth: 50
+  healthBar: {fileID: 0}
 --- !u!82 &523142821
 AudioSource:
   m_ObjectHideFlags: 0

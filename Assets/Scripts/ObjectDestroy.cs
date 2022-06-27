@@ -5,12 +5,12 @@ using UnityEngine;
 public class ObjectDestroy : MonoBehaviour
 {
 
-    Health health;
+    HealthEnemy health;
     [SerializeField] float timebeforeDestroy = 2f;
 
     void Start()
     {
-        health = GetComponent<Health>();
+        health = GetComponent<HealthEnemy>();
     }
 
     void Update()

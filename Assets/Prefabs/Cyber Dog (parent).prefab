@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3967535238978145665}
   - component: {fileID: 3967535238978145694}
   - component: {fileID: 3967535238978145667}
-  - component: {fileID: 7644900394320429224}
+  - component: {fileID: 6519960519594016174}
   m_Layer: 16
   m_Name: Cyber Dog (parent)
   m_TagString: Enemy
@@ -306,13 +306,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   runSpeed: 6
-  myboxCollider: {fileID: 0}
   animator: {fileID: 3967535238978145665}
   childpolygon: {fileID: 1951745168088323619}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &7644900394320429224
+--- !u!114 &6519960519594016174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,7 +320,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3967535238978145675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b788952e8131b40638e0536a6dbaac53, type: 3}
+  m_Script: {fileID: 11500000, guid: df6af398ef19e4ba99c0960617702630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3967535238978145665}
