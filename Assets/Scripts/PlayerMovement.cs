@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     float gravityScaleAtStart;
     CyberGirl2 controls;
     Shooter shooter;
-    Health health;
+    PlayerHealth playerHealth;
 
     bool isAlive = true;
     bool moving;
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
-        health = GetComponent<Health>();
+        playerHealth = GetComponent<PlayerHealth>();
         gravityScaleAtStart = myRigidbody.gravityScale;
     }
 
@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        int healthAmount = health.GetHealth();
+        int healthAmount = playerHealth.GetHealth();
 
         if (healthAmount <= 0 || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy Bullets")))
         {

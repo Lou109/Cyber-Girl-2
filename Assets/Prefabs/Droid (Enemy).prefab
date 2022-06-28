@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3683427611701498979}
   - component: {fileID: 1049783402681398461}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Periscope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ Transform:
   - {fileID: 3246983205531681519}
   - {fileID: 3683427611701498979}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3246983206729627221
 SpriteRenderer:
@@ -284,7 +284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  boxCollider2D: {fileID: 1049783402681398461}
 --- !u!114 &3246983206729627213
 MonoBehaviour:
   m_ObjectHideFlags: 0

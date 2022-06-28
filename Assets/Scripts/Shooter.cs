@@ -12,14 +12,14 @@ public class Shooter : MonoBehaviour
     [SerializeField] AudioSource playerShootingAudio;
   
     
-    Health health;
+    PlayerHealth playerHealth;
     public bool isFiring;
     Coroutine firingCoroutine;
     float xSpeed;
 
     void Start()
     {
-        health = GetComponent<Health>();
+        playerHealth = GetComponent<PlayerHealth>();
       
     }
 
@@ -46,7 +46,7 @@ public class Shooter : MonoBehaviour
 
     public void StopFireIfDead()
     {
-        int healthAmount = health.GetHealth();
+        int healthAmount = playerHealth.GetHealth();
 
         if (healthAmount <= 0)
         {

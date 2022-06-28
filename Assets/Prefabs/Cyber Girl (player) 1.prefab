@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 4939057132776045225}
   - component: {fileID: 1714366400}
   - component: {fileID: 1417302755}
-  - component: {fileID: 1417302756}
+  - component: {fileID: 1318990253940211008}
   - component: {fileID: 523142821}
   m_Layer: 8
   m_Name: Cyber Girl (player) 1
@@ -223,7 +223,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2143688915
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_Sprite: {fileID: 347792390, guid: 98b54615554324de391a563c4ef3fefd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -233,7 +233,7 @@ SpriteRenderer:
   m_Size: {x: 1.15625, y: 1.15625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!70 &4939057132776045204
@@ -362,9 +362,9 @@ MonoBehaviour:
   projectileLifetime: 5
   firingRate: 0.4
   gun: {fileID: 213857629}
-  useAI: 0
+  playerShootingAudio: {fileID: 0}
   isFiring: 0
---- !u!114 &1417302756
+--- !u!114 &1318990253940211008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,14 +373,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4939057132776045200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b788952e8131b40638e0536a6dbaac53, type: 3}
+  m_Script: {fileID: 11500000, guid: eafccc4911ca444808661d786cabcf24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4939057132776045202}
   triggerParameter: Dying
   impactEffect: {fileID: 4381387036837862549, guid: f91cc831f246d491386cf936683a9274, type: 3}
   firepoint: {fileID: 1186108389}
-  health: 50
+  currentHealth: 50
+  maxHealth: 50
+  healthBar: {fileID: 0}
 --- !u!82 &523142821
 AudioSource:
   m_ObjectHideFlags: 0
